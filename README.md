@@ -14,7 +14,7 @@
 <body>
   <h2>S3 Average Calculator</h2>
   <form id="notesForm">
-    <label>Math appliquées exam:</label><input type="number" step="0.01" id="a" onchange=live_calcule() />
+    <label>Math appliquées exam:</label><input type="number" step="0.01" id="a" onchange="live_calcule()" />
     <label>Math appliquées TD:</label><input type="number" step="0.01" id="b" required />
     <label>Ondes et vibrations  exam:</label><input type="number" step="0.01" id="c" required />
     <label>Ondes et vibrations TD:</label><input type="number" step="0.01" id="d" required />
@@ -37,7 +37,7 @@
 
   <script>
     function live_calcule(){
-      const v = id => parseFloat(document.getElementById(id).value) || 0;
+            const v = id => parseFloat(document.getElementById(id).value) || 0;
             const moyenne = (
               ((v("a")*0.6 + v("b")*0.4)*3 +
                (v("c")*0.6 + v("d")*0.2 + v("e")*0.2)*3 +
