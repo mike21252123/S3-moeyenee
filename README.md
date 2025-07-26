@@ -36,12 +36,7 @@
   <div class="result" id="result"></div>
 
   <script>
-    const myInput = document.getElementById('a');
-    myInput.addEventListener('input', (event) => {
-      console.log('Input value changed:', event.target.value);
-      // Perform actions based on the new value
-    });
-    document.getElementById("notesForm").onsubmit = function(e) {
+    document.getElementById("notesForm").onchange = function(e) {
       e.preventDefault();
       const v = id => parseFloat(document.getElementById(id).value) || 0;
       const moyenne = (
