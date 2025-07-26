@@ -48,6 +48,7 @@
                v("q") + v("n") + v("h") + v("k")
               ) / 19
             ).toFixed(2);
+      document.getElementById("result").innerText = "Your  average is: " + moyenne;
     };
     
     document.getElementById("notesForm").onchange = function(e) {
